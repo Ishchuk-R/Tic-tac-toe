@@ -1,0 +1,107 @@
+html {
+  font-size: 16px; }
+  @media (max-width: 767px) {
+    html {
+      font-size: 10px; } }
+
+body {
+  background: #14bdac;
+  font-family: "Baloo Paaji 2", cursive;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh; }
+
+.game {
+  margin: auto;
+  width: 100%; }
+  .game__title {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-top: 0; }
+    @media (max-width: 767px) {
+      .game__title {
+        text-transform: uppercase; } }
+  .game__content {
+    display: grid;
+    max-width: 468px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative; }
+    @media (max-width: 767px) {
+      .game__content {
+        max-width: 320px; } }
+  .game__item {
+    height: 150px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 3px solid #14bdac;
+    font-size: 8rem;
+    line-height: 150px;
+    text-align: center;
+    color: #fff; }
+    @media (max-width: 767px) {
+      .game__item {
+        height: 106px;
+        line-height: 106px; } }
+  .game__restart {
+    background: #fff;
+    color: #14bdac;
+    text-align: center;
+    max-width: 412px;
+    display: block;
+    margin: auto;
+    padding: 25px;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 3px;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s; }
+    @media (max-width: 767px) {
+      .game__restart {
+        max-width: 314px;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; } }
+    .game__restart:hover {
+      opacity: 0.7; }
+
+.winner__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  padding: 20px;
+  width: calc(100% - 6px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 3px;
+  top: 3px;
+  height: calc(100% - 6px);
+  color: #14bdac;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  background: rgba(255, 255, 255, 0.85);
+  text-align: center; }
+  .winner__label span {
+    font-weight: bold;
+    font-size: 7rem;
+    line-height: 1; }
+
+/*# sourceMappingURL=main.css.map */
